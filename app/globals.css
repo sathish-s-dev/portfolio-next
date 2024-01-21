@@ -76,6 +76,13 @@
   }
 
   .hero-mask {
-    border-radius: 73% 63% 43% 60% / 81% 78% 53% 56% 
+    /* border-radius: 73% 63% 43% 60% / 81% 78% 53% 56%; */
+    mask: url('/mask.svg') no-repeat right 70% / cover;
+    mask-position: center 80%;
+    background: linear-gradient(360deg, rgba(68, 255, 239, 0.549) 2%, rgba(255, 255, 255, 0))
+  }
+
+  .hero-mask-normal {
+    border-radius: 73% 63% 43% 60% / 81% 78% 53% 56%;
   }
 }

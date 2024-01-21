@@ -1,5 +1,7 @@
 import { ProjectCard } from './project-card';
 import { Heading } from './ui/heading';
+import Div from './motion/motion-parent';
+import { variants } from './motion/variants';
 
 export function ProjectSection() {
 	const projectsData: Project[] = [
@@ -41,14 +43,18 @@ export function ProjectSection() {
 				elementType={'h4'}>
 				Projects
 			</Heading>
-			<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
+			<Div
+				variants={variants}
+				initial='initial'
+				whileInView={'whileInView'}
+				className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
 				{projectsData.map((project, i) => (
 					<ProjectCard
 						project={project}
 						key={project.codeUrl + i}
 					/>
 				))}
-			</div>
+			</Div>
 		</section>
 	);
 }

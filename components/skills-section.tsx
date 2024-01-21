@@ -1,6 +1,9 @@
 import React from 'react';
 import { Heading } from './ui/heading';
 import Image from 'next/image';
+import MotionParent from './motion/motion-parent';
+import { variants } from './motion/variants';
+import MotionChild from './motion/motion-child';
 
 const SkillSection = async () => {
 	const skillData = [
@@ -46,16 +49,20 @@ const SkillSection = async () => {
 		},
 	];
 	return (
-		<section className='w-full py-6 md:py-24'>
+		<section className='w-full py-6 md:pb-24'>
 			<Heading>Skills</Heading>
-			<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 hover:cursor-pointer'>
+			<MotionParent
+				variants={variants}
+				initial='initial'
+				whileInView={'whileInView'}
+				className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 hover:cursor-pointer'>
 				{skillData.map((skill) => (
 					<SkillCard
 						key={skill.image}
 						{...skill}
 					/>
 				))}
-			</div>
+			</MotionParent>
 		</section>
 	);
 };
@@ -64,7 +71,9 @@ export default SkillSection;
 
 function SkillCard({ name, image }: { name: string; image: string }) {
 	return (
-		<figure className='p-6 py-10 rounded-lg grid place-items-center gap-2 bg-slate-50/10 hover:scale-105 transition-all'>
+		<MotionChild
+			variants={variants}
+			className='p-6 py-10 rounded-lg grid place-items-center gap-2 bg-slate-50/10 hover:scale-105 transition-all'>
 			<Image
 				src={image}
 				alt={name}
@@ -74,6 +83,6 @@ function SkillCard({ name, image }: { name: string; image: string }) {
 			<figcaption className='text-xs dark:text-slate-100 text-slate-700'>
 				{name}
 			</figcaption>
-		</figure>
+		</MotionChild>
 	);
 }

@@ -3,6 +3,8 @@ import { Button } from './ui/button';
 import Image from 'next/image';
 import { Heading } from './ui/heading';
 import { ChevronRightIcon } from 'lucide-react';
+import { variants } from './motion/variants';
+import MotionChild from './motion/motion-child';
 
 export function ProjectCard({
 	project: { codeUrl, image, liveUrl, name },
@@ -10,7 +12,9 @@ export function ProjectCard({
 	project: Project;
 }) {
 	return (
-		<div className='group hover:curosor-pointer overflow-clip  relative rounded-lg border border-transparent hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 transition-all duration-300'>
+		<MotionChild
+			variants={variants}
+			className='group hover:curosor-pointer overflow-clip  relative rounded-lg border border-transparent hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 transition-all duration-300'>
 			<div className='relative'>
 				<Image
 					src={image}
@@ -57,6 +61,6 @@ export function ProjectCard({
 				</div>
 				<ChevronRightIcon className='-translate-x-5 group-hover:-translate-x-2 transition-all duration-300' />
 			</div>
-		</div>
+		</MotionChild>
 	);
 }
