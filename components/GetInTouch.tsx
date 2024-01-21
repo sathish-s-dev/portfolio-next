@@ -2,6 +2,7 @@
 
 import { FormEvent, useRef } from 'react';
 import axios from 'axios';
+import { Button } from './ui/button';
 
 const GetInTouch = () => {
 	const nameRef = useRef<HTMLInputElement>(null);
@@ -44,9 +45,7 @@ const GetInTouch = () => {
 				placeholder='Message'
 			/>
 
-			<button className='px-4 py-2 rounded-md bg-accent text-light-400 font-semibold self-start'>
-				send message
-			</button>
+			<Button variant={'outline'}>send message</Button>
 		</form>
 	);
 };
