@@ -13,6 +13,7 @@ export const variants = {
 		y: 0,
 		transition: {
 			duration: 0.5,
+			when: 'beforeChildren', // beforeChildren, afterChildren
 			staggerChildren: 0.08,
 		},
 	},

@@ -12,6 +12,7 @@ const MotionChild = ({ children, ...restProps }: MotionDIvProps) => {
 	return (
 		<motion.div
 			variants={variants}
+			className={restProps.className}
 			{...restProps}>
 			{children}
 		</motion.div>

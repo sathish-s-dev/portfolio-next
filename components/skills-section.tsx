@@ -71,18 +71,18 @@ export default SkillSection;
 
 function SkillCard({ name, image }: { name: string; image: string }) {
 	return (
-		<MotionChild
-			variants={variants}
-			className='p-6 py-10 rounded-lg grid place-items-center gap-2 bg-slate-50/10 hover:scale-105 transition-all'>
-			<Image
-				src={image}
-				alt={name}
-				width={50}
-				height={50}
-			/>
-			<figcaption className='text-xs dark:text-slate-100 text-slate-700'>
-				{name}
-			</figcaption>
+		<MotionChild variants={variants}>
+			<div className='p-6 py-10 rounded-lg  bg-slate-50/10 hover:scale-110 transition-all grid place-items-center gap-2'>
+				<Image
+					src={image}
+					alt={name}
+					width={50}
+					height={50}
+				/>
+				<figcaption className='text-xs dark:text-slate-100 text-slate-700'>
+					{name}
+				</figcaption>
+			</div>
 		</MotionChild>
 	);
 }
