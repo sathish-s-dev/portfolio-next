@@ -2,7 +2,7 @@
 
 import { FormEvent, useRef } from 'react';
 import axios from 'axios';
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 
 const GetInTouch = () => {
 	const nameRef = useRef<HTMLInputElement>(null);

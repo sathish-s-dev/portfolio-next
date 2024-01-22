@@ -19,9 +19,11 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	
 	return (
 		<html lang='en'>
-			<body className={cn(raleway.className, 'flex flex-col min-h-screen')}>
+			<body
+				className={cn(raleway.className, 'flex flex-col min-h-screen')}>
 				<Providers
 					attribute='class'
 					defaultTheme='system'

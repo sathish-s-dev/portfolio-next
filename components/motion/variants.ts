@@ -1,5 +1,5 @@
 export const variants = {
-	initial: { opacity: 0, y: 65 },
+	initial: { opacity: 0, y: 50 },
 	animate: {
 		opacity: 1,
 		y: 0,

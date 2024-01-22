@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 import Image from 'next/image';
-import { Heading } from './ui/heading';
+import { Heading } from '../ui/heading';
 import { ChevronRightIcon } from 'lucide-react';
-import { variants } from './motion/variants';
-import MotionChild from './motion/motion-child';
+import { variants } from '../motion/variants';
+import MotionChild from '../motion/motion-child';
 
 export function ProjectCard({
 	project: { codeUrl, image, liveUrl, name },

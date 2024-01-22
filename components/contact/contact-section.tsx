@@ -1,11 +1,15 @@
 import React from 'react';
 import GetInTouch from './GetInTouch';
-import { Heading } from './ui/heading';
-import { SocialLinks } from './social-links';
+import { Heading } from '../ui/heading';
+import { SocialLinks } from '../social-links';
+import Circles from '../circles';
 
-export const ContactSection = () => {
+const ContactSection = () => {
 	return (
-		<section className='py-10 lg:py-20 w-full grid grid-cols-1 md:grid-cols-2'>
+		<section
+			id='contact'
+			className='relative py-10 lg:py-20 w-full grid grid-cols-1 md:grid-cols-2'>
+			<Circles className='absolute -left-24 bottom-0' />
 			<aside>
 				<Heading>Contact Me</Heading>
 				<p className='text-sm max-w-sm'>
@@ -22,3 +26,5 @@ export const ContactSection = () => {
 		</section>
 	);
 };
+
+export default ContactSection;

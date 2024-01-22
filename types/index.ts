@@ -4,3 +4,5 @@ type Project = {
 	liveUrl: string;
 	image: string;
 };
+
+type Skill = { name: string; image: string };
