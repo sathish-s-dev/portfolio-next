@@ -7,7 +7,9 @@ import { projects } from '@/constants';
 
 export default function ProjectSection() {
 	return (
-		<section>
+		<section
+			id='projects'
+			className='py-24'>
 			<Heading
 				variant={'default'}
 				elementType={'h4'}>

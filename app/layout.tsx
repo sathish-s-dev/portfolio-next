@@ -5,6 +5,7 @@ import Header from '@/components/header';
 import { cn } from '@/lib/utils';
 import Providers from '@/providers';
 import Footer from '@/components/footer';
+import NavBar from '@/components/nav-bar';
 
 const inter = Inter({ subsets: ['latin'] });
 const raleway = Raleway({ subsets: ['latin'], variable: '--font-raleway' });
@@ -19,17 +20,16 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	
 	return (
 		<html lang='en'>
-			<body
-				className={cn(raleway.className, 'flex flex-col min-h-screen')}>
+			<body className={cn(raleway.className, 'flex flex-col min-h-screen')}>
 				<Providers
 					attribute='class'
 					defaultTheme='system'
 					enableSystem
 					disableTransitionOnChange>
 					<Header />
+					<NavBar />
 					{children}
 					<Footer />
 				</Providers>

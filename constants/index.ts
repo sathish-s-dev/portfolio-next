@@ -57,11 +57,11 @@ export const skillData = [
 		image:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
 	},
-	{
-		name: 'Mongo DB',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
-	},
+	// {
+	// 	name: 'Mongo DB',
+	// 	image:
+	// 		'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+	// },
 	{
 		name: 'Next.js',
 		image:

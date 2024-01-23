@@ -4,7 +4,9 @@ import SkillsList from './skills-list';
 
 const SkillSection = async () => {
 	return (
-		<section className='w-full py-6 md:pb-24'>
+		<section
+			id='skills'
+			className='w-full py-6 md:py-24 my-10'>
 			<Heading>Skills</Heading>
 			<SkillsList skills={skillData} />
 		</section>

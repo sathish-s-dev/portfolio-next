@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
+import { Heading } from '../ui/heading';
 
 const AboutSection = () => {
 	return (
-		<div className='flex-1 py-24 flex justify-center items-center'>
+		<section
+			id='about'
+			className='flex-1 py-24 flex justify-center items-center'>
 			<div className='relative z-24 p-16 flex justify-center items-center'>
 				<div className='dark:block hidden absolute w-24 h-24 -z-20 rounded-full bg-blue-400 top-6 left-6' />
 				{/* light */}
@@ -21,10 +24,10 @@ const AboutSection = () => {
 						/>
 					</div>
 					<div className='flex-1 flex gap-5 items-center md:items-start justify-center flex-col'>
-						<h2 className='sub_heading tracking-wide md:tracking-widest'>
+						<Heading className='tracking-wide md:tracking-widest py-0'>
 							Who Am I ?
-						</h2>
-						<p className='tracking-wide md:tracking-widest'>
+						</Heading>
+						<p className='tracking-wide md:tracking-wide text-sm'>
 							Hello! I&#39;m Sathish. S a passionate React developer with a
 							strong drive to create seamless and user-centric web experiences.
 							Welcome to my portfolio, where I showcase my projects, skills, and
@@ -37,7 +40,7 @@ const AboutSection = () => {
 				{/*  */}
 				<div className='dark:block hidden absolute w-48 h-48 bottom-3 right-3 -z-20 rounded-full bg-gradient-to-l from-red-800 to-red-900 blur-[140px]' />
 			</div>
-		</div>
+		</section>
 	);
 };
 

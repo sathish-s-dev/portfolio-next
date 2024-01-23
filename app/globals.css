@@ -73,10 +73,20 @@
 
   html {
     @apply scroll-smooth transition-all duration-300;
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::scrollbar {
+    display: none;
   }
 
   body {
-    @apply bg-background text-foreground scroll-smooth
+    @apply bg-background text-foreground;
+
   }
 
   .hero-mask {

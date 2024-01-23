@@ -7,7 +7,9 @@ import Circles from './circles';
 
 const HeroSection = () => {
 	return (
-		<div className='w-full relative grid-cols-1 items-start grid lg:grid-cols-2 gap-10 md:gap-0'>
+		<section
+			id='hero'
+			className='w-full relative grid-cols-1 items-start grid lg:grid-cols-2 gap-10 md:gap-0'>
 			<Circles className='-left-24' />
 			<div className='grid gap-4 place-items-start place-content-start'>
 				<Heading className='md:text-5xl text-3xl'>
@@ -36,7 +38,7 @@ const HeroSection = () => {
 				/>
 				<Circles className='-right-10 bottom-0 rotate-180' />
 			</div>
-		</div>
+		</section>
 	);
 };
 
