@@ -28,7 +28,10 @@ const HeroSection = () => {
 					<Link href='#contact'>Hire me</Link>
 				</Button>
 			</div>
-			<div className='max-h-full w-full hero-mask-normal overflow-clip bg-gradient-to-b from-transparent to-emerald-700 sm:bg-none'>
+			<div
+				className='max-h-full w-full overflow-clip 
+			//bg-gradient-to-b from-transparent to-emerald-700 
+			sm:bg-none'>
 				<Image
 					src={'/hero.png'}
 					alt='sathish photo'

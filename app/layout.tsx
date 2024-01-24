@@ -6,8 +6,8 @@ import { cn } from '@/lib/utils';
 import Providers from '@/providers';
 import Footer from '@/components/footer';
 import NavBar from '@/components/nav-bar';
+import { MobileDrawer } from '@/components/nav-drawer';
 
-const inter = Inter({ subsets: ['latin'] });
 const raleway = Raleway({ subsets: ['latin'], variable: '--font-raleway' });
 
 export const metadata: Metadata = {
@@ -30,6 +30,7 @@ export default function RootLayout({
 					disableTransitionOnChange>
 					<Header />
 					<NavBar />
+					<MobileDrawer />
 					{children}
 					<Footer />
 				</Providers>
