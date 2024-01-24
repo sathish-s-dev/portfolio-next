@@ -99,4 +99,8 @@
   .hero-mask-normal {
     border-radius: 73% 63% 43% 60% / 81% 78% 53% 56%;
   }
+
+  .nav_mask {
+    clip-path: ellipse(150px 450px at 20% 50%);
+  }
 }

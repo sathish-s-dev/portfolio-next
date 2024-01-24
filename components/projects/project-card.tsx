@@ -45,7 +45,7 @@ export function ProjectCard({
 						</Button>
 					</div>
 				</div>
-				<div className=' py-4 flex justify-between items-center'>
+				<div className=' p-4 pt-1 flex justify-between items-center'>
 					<div>
 						<Heading
 							elementType='h4'
