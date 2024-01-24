@@ -12,6 +12,7 @@ import Link from 'next/link';
 import React from 'react';
 import { motion, spring } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { useMenuContext } from '@/lib/menu-context';
 
 export const variants = {
 	initial: {
@@ -85,11 +86,18 @@ export function NavItems({
 		},
 	];
 
+	const menu = useMenuContext();
+
+	if (!menu) return null;
+
+	const { close } = menu;
+
 	return (
 		<motion.nav
 			variants={variants}
 			initial='initial'
 			animate='animate'
+			onClick={close}
 			className={cn(
 				'group-hover:translate-x-0 relative grid content-center gap-10 transition-all duration-300 h-fit py-24 w-fit px-4 -translate-x-0 rounded-r-full',
 				containerStyles
