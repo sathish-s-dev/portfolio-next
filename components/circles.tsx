@@ -9,7 +9,7 @@ const Circles = ({ className }: { className: string }) => {
 			alt={'sathish'}
 			width={200}
 			height={100}
-			className={cn('light:invert absolute', className)}
+			className={cn('dark:invert-0 invert absolute -z-10', className)}
 		/>
 	);
 };

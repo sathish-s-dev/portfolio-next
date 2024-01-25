@@ -12,10 +12,11 @@ const HeroSection = () => {
 			className='w-full relative grid-cols-1 items-start grid lg:grid-cols-2 gap-10 md:gap-0'>
 			<Circles className='-left-24' />
 			<div className='grid gap-4 place-items-start place-content-start'>
-				<Heading className='md:text-5xl text-3xl'>
-					Nice to Meet you!
-					<br />
-					<br /> I&apos;m Sathish
+				<Heading className='md:text-5xl text-4xl block'>
+					Nice to Meet you!{' '}
+					<span className='block pt-2 bg-gradient-to-b text-5xl from-fuchsia-500 to-sky-500 bg-clip-text text-transparent'>
+						I&apos;m Sathish
+					</span>
 				</Heading>
 				<p className='md:text-sm max-w-sm text-xs'>
 					Based in the UK, I’m a front-end developer passionate about building

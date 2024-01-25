@@ -6,7 +6,7 @@ const SkillSection = async () => {
 	return (
 		<section
 			id='skills'
-			className='w-full py-6 md:py-24 my-10'>
+			className='w-full py-6 md:py-16 scroll-mt-[100px]'>
 			<Heading>Skills</Heading>
 			<SkillsList skills={skillData} />
 		</section>
