@@ -9,14 +9,18 @@ const HeroSection = () => {
 	return (
 		<section
 			id='hero'
-			className='w-full relative grid-cols-1 items-start grid lg:grid-cols-2 gap-10 md:gap-0'>
+			className='w-full relative grid-cols-1 items-start grid md:grid-cols-2 gap-10 md:gap-0'>
 			<Circles className='-left-24' />
 			<div className='grid gap-4 place-items-start place-content-start'>
-				<Heading className='md:text-5xl text-4xl block'>
-					Nice to Meet you!{' '}
-					<span className='block pt-2 bg-gradient-to-b text-5xl from-fuchsia-500 to-sky-500 bg-clip-text text-transparent'>
+				<Heading className='lg:text-5xl text-4xl block'>
+					Nice to Meet you!
+					<span className='block pt-2 bg-gradient-to-b text-5xl from-fuchsia-500 via-purple-500 to-sky-500 bg-clip-text text-transparent'>
 						I&apos;m Sathish
 					</span>
+					<span className='block pt-2 bg-gradient-to-b text-xl from-fuchsia-500 to-sky-500 bg-clip-text text-transparent'>
+						Front End Developer
+					</span>
+
 				</Heading>
 				<p className='md:text-sm max-w-sm text-xs'>
 					Based in the UK, I’m a front-end developer passionate about building
@@ -29,16 +33,13 @@ const HeroSection = () => {
 					<Link href='#contact'>Hire me</Link>
 				</Button>
 			</div>
-			<div
-				className='max-h-full w-full overflow-clip 
-			//bg-gradient-to-b from-transparent to-emerald-700 
-			sm:bg-none'>
+			<div className='w-full h-full flex items-center md:justify-center'>
 				<Image
-					src={'/hero.png'}
+					src={'/svg/landing_page.svg'}
 					alt='sathish photo'
-					width={500}
-					height={500}
-					className='object-contain relative top-10 lg:top-0 hero-mask-normal lg:hero-mask -mt-2 h-96 w-full grout-hover:scale-105 transition-all duration-300'
+					width={250}
+					height={250}
+					className='object-contain w-full aspect-video md:self-center relative lg:top-0  max-w-[350px] grout-hover:scale-105 transition-all duration-300'
 				/>
 				<Circles className='-right-10 bottom-0 rotate-180' />
 			</div>

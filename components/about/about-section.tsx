@@ -6,7 +6,8 @@ const AboutSection = () => {
 	return (
 		<section
 			id='about'
-			className='flex-1 md:py-16 py-6 flex justify-center items-center scroll-mt-[100px]'>
+			className='flex-1 md:py-16 py-6 flex justify-center flex-col items-center scroll-mt-[100px]'>
+			<Heading className='self-start'>About</Heading>
 			<div className='relative z-24 md:p-16 flex justify-center items-center'>
 				<div className='dark:block hidden absolute w-24 h-24 -z-20 rounded-full bg-blue-400 top-6 left-6' />
 				{/* light */}
@@ -16,7 +17,7 @@ const AboutSection = () => {
 					<div className='overflow-hidden order-2 md:order-1 flex justify-center'>
 						<Image
 							className=''
-							src={'/hero.png'}
+							src={'/hero_bg.png'}
 							width={200}
 							height={150}
 							alt='hero image'

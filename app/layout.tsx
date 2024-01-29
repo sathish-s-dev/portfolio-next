@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={cn(raleway.className, 'flex flex-col min-h-screen')}>
+			<body className={cn(raleway.className, 'flex flex-col min-h-screen overflow-x-clip')}>
 				<Providers
 					attribute='class'
 					defaultTheme='system'

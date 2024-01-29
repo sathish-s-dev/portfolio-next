@@ -13,14 +13,14 @@ export function ProjectCard({
 }) {
 	return (
 		<MotionChild variants={variants}>
-			<div className='group hover:curosor-pointer overflow-clip  relative rounded-lg border border-transparent hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 transition-all duration-300'>
+			<div className='group hover:curosor-pointer max-w-[300px] shadow-md hover:shadow-lg overflow-clip  relative rounded-lg border border-transparent hover:border-slate-300 hover:dark:border-slate-700 hover:dark:bg-slate-800/30 transition-all duration-300'>
 				<div className='relative'>
 					<Image
 						src={image}
 						alt='Vercel Logo'
 						width={500}
 						height={200}
-						className='object-cover h-72 w-full grout-hover:scale-105 transition-all duration-300'
+						className='object-cover aspect-video w-full grout-hover:scale-105 transition-all duration-300'
 					/>
 					<div className='group-hover:cursor-pointer group-hover:grid hidden backdrop-blur-sm absolute inset-0 w-full h-full bg-black/10 dark:bg-black/40 place-content-center transition-all duration-300'>
 						<Button
@@ -49,7 +49,7 @@ export function ProjectCard({
 					<div>
 						<Heading
 							elementType='h4'
-							className='text-md py-2 uppercase tracking-wider'>
+							className='text-sm md:text-md py-2 uppercase tracking-wider'>
 							{name}
 						</Heading>
 						<p className='text-xs uppercase tracking-wider flex gap-4'>
@@ -58,7 +58,7 @@ export function ProjectCard({
 							<span>Java Script</span>
 						</p>
 					</div>
-					<ChevronRightIcon className='-translate-x-5 group-hover:-translate-x-2 transition-all duration-300' />
+					<ChevronRightIcon className='-trangray-x-5 group-hover:translate-x-2 transition-all duration-300' />
 				</div>
 			</div>
 		</MotionChild>

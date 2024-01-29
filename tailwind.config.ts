@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 import withMT from '@material-tailwind/react/utils/withMT';
+import colors from 'tailwindcss/colors';
 
 const config = {
 	darkMode: ['class'],
@@ -53,6 +54,9 @@ const config = {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))',
 				},
+				slate: colors.slate,
+				sky: colors.sky,
+				fuchsia: colors.fuchsia,
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -78,4 +82,4 @@ const config = {
 	plugins: [require('tailwindcss-animate')],
 } satisfies Config;
 
-export default config;
+export default withMT(config);

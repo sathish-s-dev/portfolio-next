@@ -17,8 +17,8 @@ export function MobileDrawer() {
 			placeholder={'drawer'}
 			open={isOpen}
 			onClose={close}
-			className='p-4 bg-gray-50 dark:bg-gray-900 md:hidden z-20 w-[250px]'>
-			<div className=' flex items-center justify-end text-black dark:text-white bg-gray-50 dark:bg-gray-900'>
+			className='p-4 bg-slate-50 dark:bg-slate-900 md:hidden z-20 w-[250px]'>
+			<div className=' flex items-center justify-end text-black dark:text-white bg-slate-50 dark:bg-slate-900'>
 				<button
 					onClick={close}
 					className='px-6 pt-6'>

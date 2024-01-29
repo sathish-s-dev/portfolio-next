@@ -4,6 +4,8 @@ import { FormEvent, useRef } from 'react';
 import axios from 'axios';
 import { Button } from '../ui/button';
 import { sendData } from '@/api/sendData';
+import { Input, Textarea } from '@material-tailwind/react';
+import { UserIcon, MailIcon } from 'lucide-react';
 
 const GetInTouch = () => {
 	const nameRef = useRef<HTMLInputElement>(null);
@@ -24,34 +26,27 @@ const GetInTouch = () => {
 
 	return (
 		<form
-			className='flex flex-col gap-6 mt-4'
-			// onSubmit={handleSubmit}
+			className='flex flex-col flex-1 gap-6 mt-4 w-full max-w-sm self-center'
 			action={sendData}>
-			<input
-				type='text'
-				ref={nameRef}
-				name='name'
-				className={`p-2 bg-inherit border-b border-light-400 text-light-400  focus-within:ring-0 focus:outline-b-2 outline-slate-600`}
+			<Input
+				crossOrigin={'anonymous'}
+				className={`p-2 placeholder-slate-50/50`}
+				label='Name'
 				placeholder='john doe'
-				autoComplete='given-name'
+				icon={<UserIcon className='w-5 h-5' />}
+				color='teal'
 			/>
-			<input
-				type='email'
-				ref={emailRef}
-				name='email'
-				className={`p-2 bg-inherit border-b border-light-400 text-light-400 focus-within:ring-0 focus:outline-b-2 outline-slate-600`}
+			<Input
+				crossOrigin={'anonymous'}
+				label='Email'
 				placeholder='johndoe@gmail.com'
-				autoComplete='email'
+				icon={<MailIcon className='w-5 h-5' />}
+				color='teal'
 			/>
-			<textarea
-				ref={messageRef}
-				name='message'
-				className={`p-2 bg-inherit border-b border-light-400 text-light-400 focus-within:ring-0 focus:outline-b-2 outline-slate-600 `}
-				placeholder='Message'
-				maxLength={300}
-				autoComplete='message'
+			<Textarea
+				label='Message'
+				color='teal'
 			/>
-
 			<Button variant={'outline'}>send message</Button>
 		</form>
 	);
