@@ -1,7 +1,9 @@
 import React from 'react';
 import { Heading } from './ui/heading';
 import Image from 'next/image';
-import { Button } from './ui/button';
+// import { Button } from './ui/button';
+// import { Button } from '@material-tailwind/react';
+import { Button } from './button';
 import Link from 'next/link';
 import Circles from './circles';
 
@@ -20,27 +22,28 @@ const HeroSection = () => {
 					<span className='block pt-2 bg-gradient-to-b text-xl from-fuchsia-500 to-sky-500 bg-clip-text text-transparent'>
 						Front End Developer
 					</span>
-
 				</Heading>
 				<p className='md:text-sm max-w-sm text-xs'>
 					Based in the UK, I’m a front-end developer passionate about building
 					accessible web apps that users love.
 				</p>
 				<Button
-					variant={'outline'}
-					className='px-10'>
+					placeholder={'hire me'}
+					color='teal'>
 					{' '}
 					<Link href='#contact'>Hire me</Link>
 				</Button>
 			</div>
 			<div className='w-full h-full flex items-center md:justify-center'>
-				<Image
-					src={'/svg/landing_page.svg'}
-					alt='sathish photo'
-					width={250}
-					height={250}
-					className='object-contain w-full aspect-video md:self-center relative lg:top-0  max-w-[350px] grout-hover:scale-105 transition-all duration-300'
-				/>
+				<div className='relative'>
+					<Image
+						src={'/svg/landing_page.svg'}
+						alt='sathish photo'
+						width={250}
+						height={250}
+						className='object-contain w-full aspect-video'
+					/>
+				</div>
 				<Circles className='-right-10 bottom-0 rotate-180' />
 			</div>
 		</section>

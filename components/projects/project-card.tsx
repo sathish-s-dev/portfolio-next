@@ -6,11 +6,13 @@ import { ChevronRightIcon } from 'lucide-react';
 import { variants } from '../motion/variants';
 import MotionChild from '../motion/motion-child';
 
+type ProjectCardProps = {
+	project: Project;
+};
+
 export function ProjectCard({
 	project: { codeUrl, image, liveUrl, name },
-}: {
-	project: Project;
-}) {
+}: ProjectCardProps) {
 	return (
 		<MotionChild variants={variants}>
 			<div className='group hover:curosor-pointer max-w-[300px] shadow-md hover:shadow-lg overflow-clip  relative rounded-lg border border-transparent hover:border-slate-300 hover:dark:border-slate-700 hover:dark:bg-slate-800/30 transition-all duration-300'>

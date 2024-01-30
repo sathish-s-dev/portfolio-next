@@ -2,9 +2,9 @@
 
 import { FormEvent, useRef } from 'react';
 import axios from 'axios';
-import { Button } from '../ui/button';
+// import { Button } from '../ui/button';
 import { sendData } from '@/api/sendData';
-import { Input, Textarea } from '@material-tailwind/react';
+import { Input, Textarea, Button } from '@material-tailwind/react';
 import { UserIcon, MailIcon } from 'lucide-react';
 
 const GetInTouch = () => {
@@ -47,7 +47,12 @@ const GetInTouch = () => {
 				label='Message'
 				color='teal'
 			/>
-			<Button variant={'outline'}>send message</Button>
+			<Button
+				placeholder={'send'}
+				color='teal'
+				>
+				send message
+			</Button>
 		</form>
 	);
 };
