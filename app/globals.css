@@ -71,6 +71,7 @@
     @apply border-border;
   }
 
+
   html {
     @apply scroll-smooth transition-all duration-300;
     scroll-behavior: smooth;

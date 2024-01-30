@@ -4,30 +4,42 @@ export const projects: Project[] = [
 		codeUrl: 'https://github.com/sathish-s-dev/watch',
 		liveUrl: 'https://watch-rouge.vercel.app/',
 		image: '/watch.png',
+		tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Firebase'],
 	},
 	{
 		name: 'Interno',
 		codeUrl: 'https://github.com/sathish-s-dev/interno',
 		liveUrl: 'https://interno-rouge.vercel.app/',
 		image: '/interno.png',
+		tags: ['React', 'TypeScript', 'Next.JS', 'Tailwind CSS', 'Firebase'],
 	},
 	{
-		name: 'Car Show',
-		codeUrl: 'https://github.com/sathish-s-dev/car-show',
-		liveUrl: 'https://github.com/sathish-s-dev/interno',
-		image: '/interno.png',
+		name: 'Portfolio',
+		codeUrl: 'https://github.com/sathish-s-dev/portfolio-next',
+		liveUrl: 'https://portfolio-next-nine-omega.vercel.app/',
+		image: '/portfolio.png',
+		tags: ['React', 'TypeScript', 'Next.JS', 'Tailwind CSS', 'Firebase'],
 	},
 	{
-		name: 'Astra View',
+		name: 'Portfolio App',
+		codeUrl: 'https://github.com/sathish-s-dev/portfolio-native',
+		liveUrl: 'https://astra-view.vercel.app/',
+		image: '/portfolio-dark.webp',
+		tags: ['React Native', 'Expo', 'TypeScript', 'Nativewind', 'Tailwind CSS'],
+	},
+	{
+		name: 'Weather App',
 		codeUrl: 'https://github.com/sathish-s-dev/astra-view',
 		liveUrl: 'https://astra-view.vercel.app/',
-		image: '/astra-view.png',
+		image: '/weather-home.webp',
+		tags: ['React Native', 'Expo', 'TypeScript', 'Nativewind', 'Tailwind CSS'],
 	},
 	{
-		name: 'Interno',
-		codeUrl: 'https://github.com/sathish-s-dev/interno',
+		name: 'Altek App',
+		codeUrl: 'https://github.com/sathish-s-dev/altek',
 		liveUrl: 'https://github.com/sathish-s-dev/interno',
-		image: '/interno.png',
+		image: '/altek-home.webp',
+		tags: ['React Native', 'Firebase', 'Expo', 'Nativewind'],
 	},
 ];
 
@@ -57,11 +69,11 @@ export const skillData = [
 		image:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
 	},
-	// {
-	// 	name: 'Mongo DB',
-	// 	image:
-	// 		'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
-	// },
+	{
+		name: 'Mongo DB',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+	},
 	{
 		name: 'Next.js',
 		image:
