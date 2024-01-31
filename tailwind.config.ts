@@ -11,6 +11,7 @@ const config = {
 		'./src/**/*.{ts,tsx}',
 	],
 	prefix: '',
+
 	theme: {
 		container: {
 			center: true,
@@ -20,6 +21,9 @@ const config = {
 			},
 		},
 		extend: {
+			spacing: {
+				'7xl': '2000px',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

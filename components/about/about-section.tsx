@@ -13,11 +13,11 @@ const AboutSection = () => {
 				{/* light */}
 				<div className='dark:block hidden absolute w-48 h-48 top-3 left-3 -z-20 rounded-full bg-gradient-to-r from-blue-400/70 to-blue-400/10 blur-[140px]' />
 
-				<div className='grid grid-cols-1 md:grid-cols-2 md:flex-row bg-light-400/5 border border-light-400/50 rounded-xl flex-1 max-w-[90%] gap-6 md:max-w-3xl p-6 py-12 lg:p-20 sm:p-10 backdrop-blur-xl md:gap-8 text-light-400 z-24'>
+				<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:flex-row bg-light-400/5 border border-light-400/50 rounded-xl flex-1 max-w-[90%] gap-6 md:max-w-3xl p-6 py-12 lg:p-20 sm:p-10 backdrop-blur-xl md:gap-8 text-light-400 z-24'>
 					<div className='overflow-hidden order-2 md:order-1 flex justify-center'>
 						<Image
 							className=''
-							src={'/hero_bg.png'}
+							src={'/sathish-1.png'}
 							width={200}
 							height={150}
 							alt='hero image'

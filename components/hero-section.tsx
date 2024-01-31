@@ -16,8 +16,8 @@ const HeroSection = () => {
 			<div className='grid gap-4 place-items-start place-content-start'>
 				<Heading className='lg:text-5xl text-4xl block'>
 					Nice to Meet you!
-					<span className='block pt-2 bg-gradient-to-b text-5xl from-fuchsia-500 via-purple-500 to-sky-500 bg-clip-text text-transparent'>
-						I&apos;m Sathish
+					<span className='block pt-2 bg-gradient-to-br text-4xl from-sky-500 via-teal-300 to-sky-900 bg-clip-text text-transparent'>
+						I&apos;m SATHISH
 					</span>
 					<span className='block pt-2 bg-gradient-to-b text-xl from-fuchsia-500 to-sky-500 bg-clip-text text-transparent'>
 						Front End Developer
@@ -29,8 +29,9 @@ const HeroSection = () => {
 				</p>
 				<Button
 					placeholder={'hire me'}
-					color='teal'>
-					{' '}
+					color='teal'
+					
+					>
 					<Link href='#contact'>Hire me</Link>
 				</Button>
 			</div>
@@ -41,7 +42,7 @@ const HeroSection = () => {
 						alt='sathish photo'
 						width={250}
 						height={250}
-						className='object-contain w-full aspect-video'
+						className='object-contain w-full top-0 bottom-0 aspect-video'
 					/>
 				</div>
 				<Circles className='-right-10 bottom-0 rotate-180' />
