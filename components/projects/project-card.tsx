@@ -59,11 +59,11 @@ export function ProjectCard({
 							className='text-sm md:text-md py-3 uppercase tracking-wider'>
 							{name}
 						</Heading>
-						<p className='overflow-x-clip flex gap-1 font-semibold font-mono'>
+						<p className='flex-wrap flex gap-1 font-semibold font-mono'>
 							{tags.map((tag) => (
 								<span
 									key={tag}
-									className='text-slate-400 flex-shrink-0 bg-slate-900 text-[10px] px-3 py-1 rounded-full'>
+									className='text-slate-400 flex-shrink-0 dark:bg-slate-900 bg-slate-200 text-[10px] px-3 py-1 rounded-full'>
 									{tag}
 								</span>
 							))}
