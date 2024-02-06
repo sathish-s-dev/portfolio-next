@@ -13,21 +13,6 @@ import {
 import { Briefcase } from 'lucide-react';
 import { variants } from '../motion/variants';
 
-// const variants = {
-// 	initial: {
-// 		opacity: 0,
-// 		x: 50,
-// 	},
-// 	whileInView: {
-// 		opacity: 1,
-// 		x: 0,
-// 		transition: {
-// 			staggerChildren: 0.2,
-// 			duration: 1,
-// 			when: 'beforeChildren',
-// 		},
-// 	},
-// };
 const Timeline = () => {
 	const timelineData = [
 		{
@@ -65,7 +50,7 @@ const Timeline = () => {
 							placeholder={''}
 							variant='h6'
 							color='blue-gray'
-							className='leading-none flex-1'>
+							className='leading-none flex-1 dark:text-white'>
 							{item.title}
 						</MotionTypography>
 						<MotionTypography
@@ -73,7 +58,7 @@ const Timeline = () => {
 							whileInView='whileInView'
 							initial='initial'
 							placeholder={''}
-							className='font-normal text-gray-600'>
+							className='font-normal text-slate-500 text-sm dark:text-slate-400'>
 							{item.date}
 						</MotionTypography>
 					</TimelineHeader>
@@ -84,7 +69,7 @@ const Timeline = () => {
 							initial='initial'
 							placeholder={''}
 							variant='paragraph'
-							className='md:text-sm text-xs block text-gray-500'>
+							className='md:text-sm font-normal text-xs block text-slate-800 dark:text-slate-400'>
 							{item.company}
 						</MotionTypography>
 						<MotionTypography
@@ -92,7 +77,7 @@ const Timeline = () => {
 							whileInView='whileInView'
 							initial='initial'
 							placeholder={''}
-							className='font-normal text-gray-600 text-sm'>
+							className='text-slate-600 dark:text-slate-400 text-sm'>
 							{item.description}
 						</MotionTypography>
 					</TimelineBody>

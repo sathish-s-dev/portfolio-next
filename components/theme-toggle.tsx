@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
+import { MoonIcon, SunIcon, CommitIcon } from '@radix-ui/react-icons';
 import { useTheme } from 'next-themes';
 
 import { Button } from '@/components/ui/button';
@@ -11,6 +11,7 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { Settings } from 'lucide-react';
 
 export function ModeToggle() {
 	const { setTheme } = useTheme();
@@ -22,19 +23,28 @@ export function ModeToggle() {
 					className='focus-visible:ring-0 focus-within:ring-0 mx-0 group'
 					variant='link'
 					size='icon'>
-					<SunIcon className='group-hover:rotate-90 h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 focus-visible:ring-0' />
-					<MoonIcon className='group-hover:rotate-90 absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 focus-visible:ring-0' />
+					<SunIcon className=' h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 focus-visible:ring-0' />
+					<MoonIcon className=' absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 focus-visible:ring-0' />
 					<span className='sr-only'>Toggle theme</span>
 				</Button>
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align='end'>
-				<DropdownMenuItem onClick={() => setTheme('light')}>
+				<DropdownMenuItem
+					className='gap-2'
+					onClick={() => setTheme('light')}>
+					<SunIcon />
 					Light
 				</DropdownMenuItem>
-				<DropdownMenuItem onClick={() => setTheme('dark')}>
+				<DropdownMenuItem
+					className='gap-2'
+					onClick={() => setTheme('dark')}>
+					<MoonIcon />
 					Dark
 				</DropdownMenuItem>
-				<DropdownMenuItem onClick={() => setTheme('system')}>
+				<DropdownMenuItem
+					className='gap-2'
+					onClick={() => setTheme('system')}>
+					<Settings className='w-4 h-4' />
 					System
 				</DropdownMenuItem>
 			</DropdownMenuContent>

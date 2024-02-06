@@ -11,7 +11,7 @@ const ContactSection = () => {
 			id='contact'
 			className='relative py-10 gap-6 lg:py-20 w-full grid grid-cols-1 md:grid-cols-2'>
 			<Circles className='absolute -left-24 bottom-0' />
-			<aside className='p-6'>
+			<aside className='py-6'>
 				<Heading>Contact Me</Heading>
 				<p className='text-sm max-w-sm'>
 					I would love to hear about your project and how I could help. Please
