@@ -16,7 +16,7 @@ const AboutSection = () => {
 				<div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:flex-row bg-light-400/5 border border-light-400/50 rounded-xl flex-1 max-w-[90%] gap-6 md:max-w-3xl p-6 py-12 lg:p-20 sm:p-10 backdrop-blur-xl md:gap-8 text-light-400 z-24 group transition-all duration-300'>
 					<div className='overflow-hidden rounded-xl order-2 md:order-1 flex justify-center'>
 						<Image
-							className='filter drop-shadow-2xl grayscale group-hover:grayscale-0'
+							className='filter drop-shadow-2xl grayscale transition gray-transition group-hover:grayscale-0'
 							src={'/sathish-1.png'}
 							width={200}
 							height={150}

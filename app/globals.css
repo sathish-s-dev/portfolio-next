@@ -109,4 +109,8 @@
   .nav_mask {
     clip-path: ellipse(150px 450px at 20% 50%);
   }
+
+  .gray-transition {
+    transition: grayscale 1s;
+  }
 }
