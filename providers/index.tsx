@@ -5,6 +5,8 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { type ThemeProviderProps } from 'next-themes/dist/types';
 import { MenuContextProvider } from '@/lib/menu-context';
 
+import { ToastContainer, toast } from 'react-toastify';
+
 const Providers = ({ children, ...props }: ThemeProviderProps) => {
 	const [open, setOpen] = React.useState(false);
 	const openDrawerLeft = () => {
@@ -17,6 +19,7 @@ const Providers = ({ children, ...props }: ThemeProviderProps) => {
 			<MenuContextProvider
 				value={{ isOpen: open, open: openDrawerLeft, close: closeDrawerLeft }}>
 				{children}
+				
 			</MenuContextProvider>
 		</NextThemesProvider>
 	);

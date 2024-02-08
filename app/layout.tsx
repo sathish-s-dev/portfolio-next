@@ -1,12 +1,14 @@
-import type { Metadata } from 'next';
-import { Inter, Raleway } from 'next/font/google';
-import './globals.css';
-import Header from '@/components/header';
-import { cn } from '@/lib/utils';
-import Providers from '@/providers';
 import Footer from '@/components/footer';
+import Header from '@/components/header';
 import NavBar from '@/components/nav-bar';
 import { MobileDrawer } from '@/components/nav-drawer';
+import { cn } from '@/lib/utils';
+import Providers from '@/providers';
+import type { Metadata } from 'next';
+import { Raleway } from 'next/font/google';
+import { Bounce, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './globals.css';
 
 const raleway = Raleway({ subsets: ['latin'], variable: '--font-raleway' });
 
@@ -22,7 +24,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={cn(raleway.className, 'flex flex-col min-h-screen overflow-x-clip')}>
+			<body
+				className={cn(
+					raleway.className,
+					'flex flex-col min-h-screen overflow-x-clip'
+				)}>
 				<Providers
 					attribute='class'
 					defaultTheme='system'
@@ -33,6 +39,19 @@ export default function RootLayout({
 					<MobileDrawer />
 					{children}
 					<Footer />
+					<ToastContainer
+						position='top-center'
+						autoClose={2000}
+						hideProgressBar={false}
+						newestOnTop={false}
+						closeOnClick
+						rtl={false}
+						pauseOnFocusLoss
+						draggable
+						pauseOnHover
+						theme='colored'
+						transition={Bounce}
+					/>
 				</Providers>
 			</body>
 		</html>
