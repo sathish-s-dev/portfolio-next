@@ -29,16 +29,14 @@ const HeroSection = () => {
 				</p>
 				<Button
 					placeholder={'hire me'}
-					color='teal'
-					
-					>
+					color='teal'>
 					<Link href='#contact'>Hire me</Link>
 				</Button>
 			</div>
 			<div className='w-full h-full flex items-center md:justify-center'>
 				<div className='relative'>
 					<Image
-						src={'/svg/landing_page.svg'}
+						src={'/svg/landing_page.png'}
 						alt='sathish photo'
 						width={250}
 						height={250}
