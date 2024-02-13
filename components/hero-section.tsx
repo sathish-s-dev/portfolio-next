@@ -34,7 +34,7 @@ const HeroSection = () => {
 				</Button>
 			</div>
 			<div className='w-full h-full flex items-center md:justify-center'>
-				<div className='relative'>
+				<div className='relative z-10'>
 					<Image
 						src={'/svg/landing_page.png'}
 						alt='sathish photo'

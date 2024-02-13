@@ -1,6 +1,6 @@
 'use client';
 import { Drawer } from '@material-tailwind/react';
-import { NavItems } from './nav-bar';
+import { NavItems } from './nav-items';
 import { X, Menu } from 'lucide-react';
 import { useMenuContext } from '@/lib/menu-context';
 

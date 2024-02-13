@@ -12,7 +12,7 @@ export const variants = {
 		opacity: 1,
 		y: 0,
 		transition: {
-			duration: 0.5,
+			duration: 0.35,
 			when: 'beforeChildren', // beforeChildren, afterChildren
 			staggerChildren: 0.08,
 		},

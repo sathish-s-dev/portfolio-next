@@ -53,23 +53,25 @@ export function ProjectCard({
 					</div>
 				</div>
 				<div className='p-4 pt-1 flex justify-between items-center'>
-					<div>
+					<div className='flex flex-col'>
 						<Heading
 							elementType='h4'
-							className='text-sm md:text-md py-3 uppercase tracking-wider'>
+							className='text-sm md:text-md py-3 uppercase tracking-wider justify-start'>
 							{name}
 						</Heading>
-						<p className='flex-wrap flex gap-1 font-semibold font-mono'>
-							{tags.map((tag) => (
-								<span
-									key={tag}
-									className='text-slate-400 flex-shrink-0 dark:bg-slate-900 bg-slate-200 text-[10px] px-3 py-1 rounded-full'>
-									{tag}
-								</span>
-							))}
-						</p>
+						<div className='flex items-center'>
+							<p className='flex-wrap flex gap-1 font-semibold font-mono'>
+								{tags.map((tag) => (
+									<span
+										key={tag}
+										className='text-slate-500 flex-shrink-0 dark:bg-slate-900 bg-slate-200 text-[10px] px-3 py-1 rounded-full'>
+										{tag}
+									</span>
+								))}
+							</p>
+							<ChevronRightIcon className='-translate-x-4 group-hover:translate-x-0 transition-all duration-300' />
+						</div>
 					</div>
-					<ChevronRightIcon className='-trangray-x-5 group-hover:translate-x-2 transition-all duration-300' />
 				</div>
 			</div>
 		</MotionChild>

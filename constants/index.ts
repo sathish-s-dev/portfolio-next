@@ -1,3 +1,12 @@
+import {
+	Home,
+	BadgeInfo,
+	Layers3,
+	Activity,
+	Phone,
+	LucideIcon,
+} from 'lucide-react';
+
 export const projects: Project[] = [
 	{
 		name: 'Watch Movie App',
@@ -45,6 +54,62 @@ export const projects: Project[] = [
 
 export const skillData = [
 	{
+		name: 'React.js',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+	},
+
+	{
+		name: 'Next.js',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+	},
+	{
+		name: 'Typescript',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+	},
+	{
+		name: 'Tailwind css',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+		// 'https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/tailwindcss/tailwindcss-plain.svg',
+	},
+	{
+		name: 'Node.js',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+	},
+	{
+		name: 'Cypress',
+		image: 'https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/cypress.svg',
+	},
+	{
+		name: 'Git',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+	},
+	{
+		name: 'Github',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+	},
+	{
+		name: 'Firebase',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+	},
+	{
+		name: 'React Native',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+	},
+	{
+		name: 'Mongo DB',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+	},
+	{
 		name: 'HTML 5',
 		image:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
@@ -59,53 +124,39 @@ export const skillData = [
 		image:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
 	},
+];
+
+export type Tlink = { name: string; href: string; Icon: LucideIcon };
+
+export const links: Tlink[] = [
 	{
-		name: 'React.js',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+		name: 'Home',
+		href: '/',
+		Icon: Home,
 	},
 	{
-		name: 'React Native',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+		name: 'About',
+		href: '#about',
+		Icon: BadgeInfo,
 	},
 	{
-		name: 'Mongo DB',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+		name: 'skills',
+		href: '#skills',
+		Icon: Layers3,
+	},
+	// {
+	// 	name: 'Experience',
+	// 	href: '#experiance',
+	// 	Icon: Briefcase,
+	// },
+	{
+		name: 'Projects',
+		href: '#projects',
+		Icon: Activity,
 	},
 	{
-		name: 'Next.js',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
-	},
-	{
-		name: 'Typescript',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-	},
-	{
-		name: 'Tailwind css',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
-	},
-	{
-		name: 'Node.js',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
-	},
-	{
-		name: 'Cypress',
-		image: 'https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/cypress.svg',
-	},
-	{
-		name: 'git',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-	},
-	{
-		name: 'Firebase',
-		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+		name: 'Contact',
+		href: '#contact',
+		Icon: Phone,
 	},
 ];
