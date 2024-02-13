@@ -9,6 +9,7 @@ import { Raleway } from 'next/font/google';
 import { Bounce, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const raleway = Raleway({ subsets: ['latin'], variable: '--font-raleway' });
 
@@ -52,6 +53,7 @@ export default function RootLayout({
 						theme='colored'
 						transition={Bounce}
 					/>
+					<SpeedInsights />
 				</Providers>
 			</body>
 		</html>
