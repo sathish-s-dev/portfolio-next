@@ -30,6 +30,10 @@ const ContactSection = () => {
 			</aside>
 			<aside className='max-w-md self-center'>
 				<GetInTouch />
+				<span className='text-xs text-slate-400 pt-4 block max-w-xs'>
+					* Please write any query in the message box above will be stored in
+					the <strong>Firestore</strong>.
+				</span>
 			</aside>
 		</section>
 	);
