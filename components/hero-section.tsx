@@ -32,15 +32,13 @@ const HeroSection = () => {
 					<Link href='#contact'>Hire me</Link>
 				</Button>
 			</div>
-			<div className='w-full h-full flex items-center md:justify-center'>
-				<Image
-					src={'/svg/landing_page.svg'}
-					alt='sathish photo'
-					width={250}
-					height={250}
-					className='object-contain w-full top-0 bottom-0 aspect-video relative z-10'
-				/>
-			</div>
+			<Image
+				src={'/svg/landing_page.svg'}
+				alt='sathish photo'
+				width={250}
+				height={250}
+				className='w-full max-w-xs'
+			/>
 		</section>
 	);
 };
