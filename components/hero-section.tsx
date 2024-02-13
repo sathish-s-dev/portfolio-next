@@ -43,7 +43,6 @@ const HeroSection = () => {
 						className='object-contain w-full top-0 bottom-0 aspect-video'
 					/>
 				</div>
-				<Circles className='-right-10 bottom-0 rotate-180' />
 			</div>
 		</section>
 	);
