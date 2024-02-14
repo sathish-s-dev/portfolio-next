@@ -113,4 +113,8 @@
   .gray-transition {
     transition: grayscale 1s;
   }
+
+  .text-shadow {
+    text-shadow: 0 0 15px rgba(0, 128, 128, 0.677);
+  }
 }

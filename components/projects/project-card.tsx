@@ -31,7 +31,8 @@ export function ProjectCard({
 					/>
 					<div className='group-hover:cursor-pointer group-hover:grid hidden backdrop-blur-sm absolute inset-0 w-full h-full bg-black/10 dark:bg-black/40 place-content-center transition-all duration-300'>
 						<Button
-							variant='link'
+							variant='text'
+							placeholder={''}
 							className='w-full'>
 							<Link
 								className='text-white'
@@ -41,7 +42,8 @@ export function ProjectCard({
 							</Link>
 						</Button>
 						<Button
-							variant='link'
+							variant='text'
+							placeholder={''}
 							className='w-full'>
 							<Link
 								href={codeUrl}

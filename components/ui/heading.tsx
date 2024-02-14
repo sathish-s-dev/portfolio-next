@@ -33,7 +33,7 @@ const Heading = ({
 	const Comp = elementType ? elementType : 'h3';
 	return (
 		<Comp
-			className={cn(headingVariants({ variant, className }))}
+			className={cn(headingVariants({ variant, className }), '')}
 			{...props}
 		/>
 	);
