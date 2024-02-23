@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import GetInTouch from './GetInTouch';
 import { Heading } from '../ui/heading';
@@ -16,14 +17,6 @@ const ContactSection = () => {
 			<Circles className='absolute -left-24 bottom-0' />
 			<div className='flex justify-between items-center'>
 				<Heading className='justify-start'>Contact Me</Heading>
-				<abbr title='Download Resume' className='decoration-transparent'>
-					<a
-						href='/sathish_s_resume.pdf'
-						download={true}
-						className='flex gap-1 items-center text-xs text-white-400 hover:scale-110'>
-						<Download size='20' />
-					</a>
-				</abbr>
 			</div>
 			<div className=' grid grid-cols-1 md:grid-cols-2'>
 				<aside className='py-6 flex flex-col items-start gap-6'>

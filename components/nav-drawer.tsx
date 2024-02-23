@@ -7,6 +7,8 @@ import { useMenuContext } from '@/lib/menu-context';
 export function MobileDrawer() {
 	const menu = useMenuContext();
 
+	
+
 	if (!menu) return null;
 
 	const { close, isOpen } = menu;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Heading } from './ui/heading';
 import Image from 'next/image';
 
-import { Button } from './button';
+import { Button } from './ui/button';
 import Link from 'next/link';
 import Circles from './circles';
 

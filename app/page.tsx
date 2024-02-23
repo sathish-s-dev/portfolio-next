@@ -3,7 +3,9 @@ import ContactSection from '@/components/contact';
 import HeroSection from '@/components/hero-section';
 import ProjectSection from '@/components/projects';
 import SkillSection from '@/components/skills';
+import { IconButton } from '@/components/ui/icon-button';
 import { TimeLineSection } from '@/components/timeline';
+import { Download } from 'lucide-react';
 
 export default function Home() {
 	return (

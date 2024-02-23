@@ -30,6 +30,13 @@ export const projects: Project[] = [
 		tags: ['React', 'TypeScript', 'Next.JS', 'Tailwind CSS', 'Firebase'],
 	},
 	{
+		name: 'Chatty App',
+		codeUrl: 'https://github.com/sathish-s-dev/chatty',
+		liveUrl: 'https://github.com/sathish-s-dev/chatty',
+		image: '/chatty.jpeg',
+		tags: ['React Native', 'Expo', 'Nativewind', 'Tailwind CSS', 'Firebase'],
+	},
+	{
 		name: 'Portfolio App',
 		codeUrl: 'https://github.com/sathish-s-dev/portfolio-native',
 		liveUrl: 'https://github.com/sathish-s-dev/portfolio-native',
@@ -58,7 +65,11 @@ export const skillData = [
 		image:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
 	},
-
+	{
+		name: 'Redux',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg',
+	},
 	{
 		name: 'Next.js',
 		image:
@@ -70,10 +81,14 @@ export const skillData = [
 			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
 	},
 	{
+		name: 'SASS',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg',
+	},
+	{
 		name: 'Tailwind css',
 		image:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-		// 'https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/tailwindcss/tailwindcss-plain.svg',
 	},
 	{
 		name: 'Node.js',
@@ -105,10 +120,17 @@ export const skillData = [
 			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
 	},
 	{
-		name: 'Mongo DB',
+		name: 'Jquery',
 		image:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg',
 	},
+
+	{
+		name: 'Figma',
+		image:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+	},
+	// },
 	{
 		name: 'HTML 5',
 		image:

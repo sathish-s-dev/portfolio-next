@@ -1,11 +1,12 @@
 'use client';
-
-import { useMenuContext } from '@/lib/menu-context';
-import { navBarVariants } from './nav-bar';
-import { cn } from '@/lib/utils';
 import { Tlink, links } from '@/constants';
+import { useMenuContext } from '@/lib/menu-context';
+import { cn } from '@/lib/utils';
+import { motion, } from 'framer-motion';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { usePathname, useSelectedLayoutSegment } from 'next/navigation';
+import { useState } from 'react';
+import { navBarVariants } from './nav-bar';
 export function NavItems({
 	linkStyles,
 	containerStyles,
@@ -18,6 +19,11 @@ export function NavItems({
 	if (!menu) return null;
 
 	const { close } = menu;
+	const pathName = usePathname();
+
+	const [current, setCurrent] = useState(pathName);
+
+	console.log('pathname', pathName);
 
 	return (
 		<motion.nav
@@ -33,10 +39,14 @@ export function NavItems({
 				<motion.li
 					variants={navBarVariants}
 					key={name + href}
-					className='list-none'>
+					className='list-none'
+					onClick={() => setCurrent(href)}>
 					<Link
 						href={href}
-						className='flex items-center gap-2 hover:text-teal-500 transition-colors duration-100 dark:hover:text-teal-400'>
+						className={cn(
+							'flex items-center gap-2 hover:text-teal-500 transition-colors duration-100 dark:hover:text-teal-400',
+							current === href && 'text-teal-500'
+						)}>
 						<Icon size={18} />
 						<p
 							className={cn(

@@ -10,6 +10,9 @@ import { Bounce, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './globals.css';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { IconButton } from '@/components/ui/icon-button';
+import { Download } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const raleway = Raleway({ subsets: ['latin'], variable: '--font-raleway' });
 
@@ -39,6 +42,17 @@ export default function RootLayout({
 					<NavBar />
 					<MobileDrawer />
 					{children}
+
+					<div className='fixed bottom-24 right-24 bg-green-400 rounded-full'>
+						<a
+							href='/sathish_s_resume.pdf'
+							download
+							className='relative p-3 block bg-teal-400 rounded-full after:absolute after:inset-0 after:rounded-full w-full h-full after:z-[-2] after:bg-teal-400 after:animate-ping
+						 text-white shadow-md'>
+							<Download size={20} />
+						</a>
+					</div>
+
 					<Footer />
 					<ToastContainer
 						position='top-center'
