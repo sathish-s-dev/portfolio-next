@@ -1,4 +1,5 @@
 type Project = {
+	id: string;
 	name: string;
 	codeUrl: string;
 	liveUrl: string;
