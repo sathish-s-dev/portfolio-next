@@ -1,17 +1,28 @@
-'use client'
+"use client";
+import Image from "next/image";
+import React from "react";
 import { projects } from "@/constants";
 import { Button } from "@material-tailwind/react";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React from "react";
 
-const ProjectPage = ({ params: { id } }: { params: { id: string } }) => {
-  console.log(id);
+const InterceptedModalRoute = ({
+  params: { id },
+}: {
+  params: { id: string };
+}) => {
   let newProject = projects.find((project) => project.id === id);
   if (!newProject) return null;
   const router = useRouter();
   return (
-    <div className="flex-1 justify-center items-center flex">
+    <div
+      className="absolute inset-0 bg-sky-900/20 z-40 flex justify-center items-center backdrop-blur-sm"
+      onClick={(e) => router.back()}
+      onKeyDown={(e) => {
+        if (e.key === "Escape") {
+          router.back();
+        }
+      }}
+    >
       <div className="bg-white dark:bg-slate-950 pb-6 rounded-xl shadow-xl overflow-hidden max-w-[400px]">
         <Image
           width={400}
@@ -62,4 +73,4 @@ const ProjectPage = ({ params: { id } }: { params: { id: string } }) => {
   );
 };
 
-export default ProjectPage;
+export default InterceptedModalRoute;

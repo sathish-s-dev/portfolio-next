@@ -15,6 +15,7 @@ export const projects: Project[] = [
     liveUrl: "https://watch-rouge.vercel.app/",
     image: "/watch.png",
     tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Firebase"],
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
   },
   {
     id: "2",
@@ -23,6 +24,7 @@ export const projects: Project[] = [
     liveUrl: "https://interno-rouge.vercel.app/",
     image: "/interno.png",
     tags: ["React", "TypeScript", "Next.JS", "Tailwind CSS", "Firebase"],
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
   },
   {
     id: "3",
@@ -31,6 +33,7 @@ export const projects: Project[] = [
     liveUrl: "https://portfolio-next-nine-omega.vercel.app/",
     image: "/portfolio.png",
     tags: ["React", "TypeScript", "Next.JS", "Tailwind CSS", "Firebase"],
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
   },
   {
     id: "4",
@@ -39,6 +42,7 @@ export const projects: Project[] = [
     liveUrl: "https://github.com/sathish-s-dev/chatty",
     image: "/chatty.jpeg",
     tags: ["React Native", "Expo", "Nativewind", "Tailwind CSS", "Firebase"],
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
   },
   {
     id: "5",
@@ -47,6 +51,7 @@ export const projects: Project[] = [
     liveUrl: "https://github.com/sathish-s-dev/portfolio-native",
     image: "/portfolio-dark.webp",
     tags: ["React Native", "Expo", "TypeScript", "Nativewind", "Tailwind CSS"],
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
   },
   {
     id: "6",
@@ -55,6 +60,7 @@ export const projects: Project[] = [
     liveUrl: "https://github.com/sathish-s-dev/weather-native",
     image: "/weather-home.webp",
     tags: ["React Native", "Expo", "TypeScript", "Nativewind", "Tailwind CSS"],
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
   },
   {
     id: "7",
@@ -63,6 +69,7 @@ export const projects: Project[] = [
     liveUrl: "https://github.com/sathish-s-dev/altek",
     image: "/altek-home.webp",
     tags: ["React Native", "Firebase", "Expo", "Nativewind"],
+    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
   },
 ];
 
@@ -79,6 +86,7 @@ export const skillData = [
   },
   {
     name: "Next.js",
+    invert: true,
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
   },
@@ -104,15 +112,18 @@ export const skillData = [
   },
   {
     name: "Cypress",
+    invert: true,
     image: "https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/cypress.svg",
   },
   {
     name: "Git",
+    
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
   {
     name: "Github",
+    invert: true,
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },

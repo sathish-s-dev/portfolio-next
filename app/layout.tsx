@@ -13,6 +13,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { IconButton } from "@/components/ui/icon-button";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import React from "react";
 
 const raleway = Raleway({ subsets: ["latin"], variable: "--font-raleway" });
 
@@ -23,8 +24,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -44,6 +47,7 @@ export default function RootLayout({
           <NavBar />
           <MobileDrawer />
           {children}
+          {modal}
           <Footer />
           <ToastContainer
             position="top-center"
