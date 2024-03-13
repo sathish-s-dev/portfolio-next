@@ -19,7 +19,7 @@ export default function Home() {
       <ContactSection />
       <div className="fixed md:bottom-16 md:right-16 bottom-6 right-6 bg-green-400 rounded-full">
         <a
-          href="/sathish_s_resume.pdf"
+          href="/SATHISH_RESUME.pdf"
           download
           className="relative p-3 block bg-teal-400 rounded-full after:absolute after:inset-0 after:rounded-full w-full h-full after:z-[-2] after:bg-teal-400/40 after:animate-ping
 						 text-white shadow-md"
