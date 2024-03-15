@@ -17,16 +17,19 @@ export function ProjectCard({
   const isMobile = tags.includes("React Native") || tags.includes("Expo");
   return (
     <MotionChild variants={variants}>
-      <div className="group hover:curosor-pointer max-w-[300px] shadow-md hover:shadow-lg overflow-clip  relative rounded-lg border border-transparent hover:border-slate-300 hover:dark:border-slate-700 hover:dark:bg-slate-800/30 transition-all duration-300">
-        <Link href={`/projects/${id}`} className="block">
-          <div className="relative overflow-clip">
+      <div className="group-hover:curosor-pointer group rotate-z max-w-[300px] shadow-md hover:shadow-slate-800 hover:bg-slate-900/15 hover:dark:bg-slate-100/50 hover:box-shadow  relative rounded-lg  transition-all duration-300 hover:rotate-x-12 preserve">
+        <Link
+          href={`/projects/${id}`}
+          className="block relative group-hover:reverse-rotate group-hover:border-sky-200/50 group-hover:dark:border-sky-900/50 border group transition-all duration-500 bg-slate-50/10 overflow-clip  group-hover:rounded-lg z-10"
+        >
+          <div className="relative  group-hover:translate-z-52 overflow-clip">
             <Image
               src={image}
               alt="Vercel Logo"
               width={500}
               height={200}
               className={cn(
-                "aspect-video object-cover w-full grout-hover:scale-105 transition-all duration-300 group-hover:scale-110",
+                "aspect-video object-cover w-full transition-all duration-300",
                 isMobile && "object-contain scale-150 group-hover:scale-[2]"
               )}
             />
@@ -40,11 +43,11 @@ export function ProjectCard({
                 {name}
               </Heading>
               <div className="flex items-center">
-                <p className="flex-wrap flex gap-1 font-semibold font-mono">
+                <p className="flex-wrap flex gap-1 font-semibold font-mono dark:text-white">
                   {tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-slate-500 flex-shrink-0 dark:bg-slate-900 bg-slate-200 text-[10px] px-3 py-1 rounded-full"
+                      className=" flex-shrink-0 bg-slate-900 text-slate-200 text-[10px] px-3 py-1 rounded-full"
                     >
                       {tag}
                     </span>

@@ -14,6 +14,7 @@ import { IconButton } from "@/components/ui/icon-button";
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import React from "react";
+import MouseTrackingBall from "@/components/mouse-tracking-ball";
 
 const raleway = Raleway({ subsets: ["latin"], variable: "--font-raleway" });
 
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  modal
+  modal,
 }: Readonly<{
   children: React.ReactNode;
   modal: React.ReactNode;
@@ -34,7 +35,7 @@ export default function RootLayout({
       <body
         className={cn(
           raleway.className,
-          "flex flex-col min-h-screen overflow-x-clip"
+          "flex flex-col min-h-screen overflow-x-clip h-full"
         )}
       >
         <Providers
@@ -63,6 +64,8 @@ export default function RootLayout({
             transition={Bounce}
           />
           <SpeedInsights />
+          {/* <MouseTrackingBall /> */}
+          
         </Providers>
       </body>
     </html>

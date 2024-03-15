@@ -7,6 +7,7 @@ import { IconButton } from "@/components/ui/icon-button";
 import { TimeLineSection } from "@/components/timeline";
 import { Download } from "lucide-react";
 import Link from "next/link";
+import MouseTrackingBall from "@/components/mouse-tracking-ball";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           <Download size={20} />
         </a>
       </div>
+      
     </main>
   );
 }

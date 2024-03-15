@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
 import withMT from '@material-tailwind/react/utils/withMT';
-import colors from 'tailwindcss/colors';
+import colors, { emerald } from 'tailwindcss/colors';
 
 const config = {
 	darkMode: ['class'],
@@ -61,6 +61,7 @@ const config = {
 				slate: colors.slate,
 				sky: colors.sky,
 				fuchsia: colors.fuchsia,
+				emerald: colors.emerald
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
