@@ -9,7 +9,7 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
 			variants={variants}
 			initial='initial'
 			whileInView={'whileInView'}
-			className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
+			className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 place-items-center'>
 			{projects.map((project, i) => (
 				<ProjectCard
 					project={project}

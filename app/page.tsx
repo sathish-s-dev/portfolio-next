@@ -11,7 +11,7 @@ import MouseTrackingBall from "@/components/mouse-tracking-ball";
 
 export default function Home() {
   return (
-    <main className="flex-1 flex flex-col items-center justify-between md:p-24 p-6 max-w-6xl mx-auto">
+    <main className="flex-1 flex flex-col items-center justify-between md:p-16 pt-24 p-6 max-w-6xl mx-auto">
       <HeroSection />
       <AboutSection />
       <SkillSection />

@@ -20,7 +20,7 @@ export function ProjectCard({
       <div className="group-hover:curosor-pointer group rotate-z max-w-[300px] shadow-md hover:shadow-slate-800 hover:bg-slate-900/15 hover:dark:bg-slate-100/50 hover:box-shadow  relative rounded-lg  transition-all duration-300 hover:rotate-x-12 preserve">
         <Link
           href={`/projects/${id}`}
-          className="block relative group-hover:reverse-rotate group-hover:border-sky-200/50 group-hover:dark:border-sky-900/50 border group transition-all duration-500 bg-slate-50/10 overflow-clip  group-hover:rounded-lg z-10"
+          className="block relative group-hover:reverse-rotate group-hover:border-sky-200/50 group-hover:dark:border-sky-900/50 border group transition-all duration-500 bg-slate-50/10 overflow-  group-hover:rounded-lg z-10"
         >
           <div className="relative  group-hover:translate-z-52 overflow-clip">
             <Image
@@ -42,18 +42,18 @@ export function ProjectCard({
               >
                 {name}
               </Heading>
-              <div className="flex items-center">
+              <div className="flex items-center gap-1">
                 <p className="flex-wrap flex gap-1 font-semibold font-mono dark:text-white">
                   {tags.map((tag) => (
                     <span
                       key={tag}
-                      className=" flex-shrink-0 bg-slate-900 text-slate-200 text-[10px] px-3 py-1 rounded-full"
+                      className=" flex-shrink-0 bg-slate-900 text-slate-200 text-[9px] px-3 py-[2px] rounded-full"
                     >
                       {tag}
                     </span>
                   ))}
                 </p>
-                <ChevronRightIcon className="-translate-x-4 group-hover:translate-x-0 transition-all duration-300" />
+                <ChevronRightIcon className="-translate-x-2 group-hover:translate-x-0 group-hover:animate-bounce transition-all duration-300" />
               </div>
             </div>
           </div>
