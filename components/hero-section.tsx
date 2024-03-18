@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="w-full relative grid-cols-1 items-start grid md:grid-cols-2 gap-16 md:py-12 md:gap-0"
+      className="w-full relative grid-cols-1 items-start grid md:grid-cols-2 gap-16 md:py-12 md:gap-0 place-items-center"
     >
       <div className="grid gap-4 place-items-start place-content-start">
         {/* <Circles className='-left-24' /> */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
         alt="sathish photo"
         width={250}
         height={250}
-        className="w-full max-w-[350px] md:w-auto mx-auto"
+        className="w-full max-w-[350px] md:w-auto mx-auto place-self-center"
       />
     </section>
   );

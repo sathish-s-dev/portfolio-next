@@ -44,10 +44,10 @@ export function NavItems({
 					<Link
 						href={href}
 						className={cn(
-							'flex items-center gap-2 hover:text-teal-500 transition-colors duration-100 dark:hover:text-teal-400',
-							current === href && 'text-teal-500'
+							'flex items-center gap-2 hover:text-teal-500 font-semibold transition-colors duration-100 dark:hover:text-teal-400',
+							current === href && 'text-teal-500 font-bold'
 						)}>
-						<Icon size={18} />
+						<Icon size={18} strokeWidth={2} />
 						<p
 							className={cn(
 								'group-hover:scale-x-100 scale-x-0 transition-transform duration-100 origin-left delay-200',

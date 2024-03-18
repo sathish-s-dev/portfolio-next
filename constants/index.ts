@@ -59,16 +59,16 @@ export const projects: Project[] = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
   },
-  {
-    id: "5",
-    name: "Portfolio App",
-    codeUrl: "https://github.com/sathish-s-dev/portfolio-native",
-    liveUrl: "https://github.com/sathish-s-dev/portfolio-native",
-    image: "/portfolio-dark.webp",
-    tags: ["React Native", "Expo", "TypeScript", "Nativewind", "Tailwind CSS"],
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
-  },
+  // {
+  //   id: "5",
+  //   name: "Portfolio App",
+  //   codeUrl: "https://github.com/sathish-s-dev/portfolio-native",
+  //   liveUrl: "https://github.com/sathish-s-dev/portfolio-native",
+  //   image: "/portfolio-dark.webp",
+  //   tags: ["React Native", "Expo", "TypeScript", "Nativewind", "Tailwind CSS"],
+  //   description:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
+  // },
   {
     id: "6",
     name: "Weather App",
@@ -79,16 +79,16 @@ export const projects: Project[] = [
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
   },
-  {
-    id: "7",
-    name: "Altek App",
-    codeUrl: "https://github.com/sathish-s-dev/altek",
-    liveUrl: "https://github.com/sathish-s-dev/altek",
-    image: "/altek-home.webp",
-    tags: ["React Native", "Firebase", "Expo", "Nativewind"],
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
-  },
+  // {
+  //   id: "7",
+  //   name: "Altek App",
+  //   codeUrl: "https://github.com/sathish-s-dev/altek",
+  //   liveUrl: "https://github.com/sathish-s-dev/altek",
+  //   image: "/altek-home.webp",
+  //   tags: ["React Native", "Firebase", "Expo", "Nativewind"],
+  //   description:
+  //     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nostrum aliquam at nesciunt harum ex autem sint perferendis necessitatibus incidunt!",
+  // },
 ];
 
 export const skillData = [
