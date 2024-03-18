@@ -9,7 +9,7 @@ const SkillsList = ({ skills }: { skills: Skill[] }) => {
 			variants={variants}
 			initial='initial'
 			whileInView={'whileInView'}
-			className='grid grid-cols-2 sm:grid-cols-3 place-items-center md:grid-cols-4 lg:grid-cols-6 md:gap-0 gap-6 hover:cursor-pointer'>
+			className='grid grid-cols-2 gap-y-10 sm:grid-cols-3 place-items-center md:grid-cols-4 lg:grid-cols-6 gap-6 hover:cursor-pointer'>
 			{skills.map((skill) => (
 				<SkillCard
 					key={skill.image}

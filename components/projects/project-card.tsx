@@ -17,10 +17,10 @@ export function ProjectCard({
   const isMobile = tags.includes("React Native") || tags.includes("Expo");
   return (
     <MotionChild variants={variants}>
-      <div className="group-hover:curosor-pointer group rotate-z max-w-[300px] shadow-md hover:shadow-slate-800 hover:bg-slate-900/15 hover:dark:bg-slate-100/50 hover:box-shadow  relative rounded-lg  transition-all duration-300 hover:rotate-x-12 preserve">
+      <div className="group-hover:curosor-pointer group rotate-z max-w-[300px] shadow-md hover:shadow-slate-800 hover:bg-slate-900/15 hover:dark:bg-slate-100/50 hover:box-shadow  relative rounded-lg  transition-all duration-700 hover:rotate-x-12 preserve">
         <Link
           href={`/projects/${id}`}
-          className="block relative group-hover:reverse-rotate group-hover:border-sky-200/50 group-hover:dark:border-sky-900/50 border group transition-all duration-500 bg-slate-50/10 overflow-  group-hover:rounded-lg z-10"
+          className="block relative group-hover:reverse-rotate hover:reverse-rotate group-hover:border-sky-200/50 group-hover:dark:border-sky-900/50 border group transition-all duration-500 bg-slate-50/10 group-hover:rounded-lg z-10"
         >
           <div className="relative  group-hover:translate-z-52 overflow-clip">
             <Image

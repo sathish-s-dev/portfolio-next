@@ -121,32 +121,32 @@
   }
   .preserve {
     transform-style: preserve-3d;
-    perspective: 1500px;
+    perspective: 700px;
     transform-origin: bottom;
   }
 
   .rotate-x-12 {
-    transform: rotateX(92deg);
+    transform: rotateX(85deg);
     transform-origin: bottom;
-    background: radial-gradient(rgba(236, 236, 236, 0.492), transparent);
+    background: radial-gradient(transparent, transparent, transparent);
   }
 
   .reverse-rotate {
-    transform: rotateX(-60deg) translateY(-55%);
-    transform-origin: bottom;
+    transform: rotateX(-58deg) translateY(-40%);
     backdrop-filter: blur(10px);
     transform-origin: center;
-    animation: fade-up 0.8s ease-in-out forwards;
+    transition: all 0.5s ease-in-out;
+    animation: fade-up 0.5s ease-in-out forwards;
   }
 
   @keyframes fade-up {
     from {
       opacity: 0;
-      translate: 0 0 -50px;
+      translate: 0 0 -100px;
     }
     to {
       opacity: 1;
-      translate: 0 0 0px;
+      translate: 0 0 10px;
     }
   }
 
