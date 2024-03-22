@@ -24,7 +24,7 @@ const HeroSection = () => {
           </span>
         </Heading>
         <p className="md:text-sm max-w-sm text-xs line-clamp-3">
-          I am a React developer with 2.5 years of experience, specializing in
+          I am a React developer specializing in
           developing user-centric web applications with seamless integration.
           Proficient in performance optimization and Agile methodologies, I
           excel in collaborative environments, adept at translating design
