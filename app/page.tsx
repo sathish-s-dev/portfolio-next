@@ -18,7 +18,7 @@ export default function Home() {
       <ProjectSection />
       {/* <TimeLineSection /> */}
       <ContactSection />
-      <div className="fixed md:bottom-16 md:right-16 bottom-6 right-6 bg-green-400 rounded-full">
+      <div className="fixed md:bottom-16 md:right-16 bottom-6 right-6 bg-green-400 rounded-full z-[2]">
         <a
           href="/SATHISH_RESUME.pdf"
           download
@@ -28,7 +28,6 @@ export default function Home() {
           <Download size={20} />
         </a>
       </div>
-      
     </main>
   );
 }
