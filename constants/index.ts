@@ -194,27 +194,27 @@ export const links: Tlink[] = [
   },
   {
     name: "About",
-    href: "#about",
+    href: "about",
     Icon: BadgeInfo,
   },
   {
     name: "skills",
-    href: "#skills",
+    href: "skills",
     Icon: Layers3,
   },
   // {
   // 	name: 'Experience',
-  // 	href: '#experiance',
+  // 	href: 'experiance',
   // 	Icon: Briefcase,
   // },
   {
     name: "Projects",
-    href: "#projects",
+    href: "projects",
     Icon: Activity,
   },
   {
     name: "Contact",
-    href: "#contact",
+    href: "contact",
     Icon: Phone,
   },
 ];
