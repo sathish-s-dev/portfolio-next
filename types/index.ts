@@ -5,8 +5,9 @@ type Project = {
   liveUrl: string;
   image: string;
   tags: string[];
-  description?: string;
-
+  description?: string[];
+  achievements?: string[];
+  futurePlans?: string[];
 };
 
-type Skill = { name: string; image: string, invert?: boolean };
+type Skill = { name: string; image: string; invert?: boolean };
