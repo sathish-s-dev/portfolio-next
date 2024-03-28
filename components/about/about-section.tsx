@@ -28,7 +28,7 @@ const AboutSection = () => {
             <Heading className="tracking-wide md:tracking-widest py-0 text-primary self-start">
               Who Am I ?
             </Heading>
-            <p className="tracking-wide md:tracking-wider text-justify text-xs first-letter:text-lg sm:text-sm text-slate-600 dark:text-slate-400">
+            <p className="tracking-wide md:tracking-wider text-justify text-xs first-letter:text-lg sm:text-sm text-secondary-foreground text-slate-300">
               I am a React developer with a passion for specializing in
               developing user-centric web applications with seamless
               integration. Proficient in{" "}

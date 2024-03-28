@@ -12,7 +12,7 @@ const MotionChild = ({ children, ...restProps }: MotionDIvProps) => {
   return (
     <motion.div
       variants={variants}
-      className={cn("preserve bg-transparent flex justify-center", restProps.className)}
+      className={cn("preserve bg-transparent", restProps.className)}
       {...restProps}
     >
       {children}
