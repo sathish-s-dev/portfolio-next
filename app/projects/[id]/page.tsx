@@ -1,9 +1,11 @@
-'use client'
+"use client";
 import { projects } from "@/constants";
 import { Button } from "@material-tailwind/react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
+import Link from "next/link";
 
 const ProjectPage = ({ params: { id } }: { params: { id: string } }) => {
   console.log(id);
@@ -11,55 +13,63 @@ const ProjectPage = ({ params: { id } }: { params: { id: string } }) => {
   if (!newProject) return null;
   const router = useRouter();
   return (
-    <div className="flex-1 justify-center items-center flex">
-      <div className="bg-white dark:bg-slate-950 pb-6 rounded-xl shadow-xl overflow-hidden max-w-[400px]">
+    <main className="flex flex-1 items-center justify-center py-24 pt-36">
+      <div className="flex max-w-4xl flex-col justify-start overflow-hidden rounded-xl bg-white p-6 pb-6 shadow-xl dark:bg-slate-950">
         <Image
           width={400}
           height={100}
-          className="aspect-square object-cover"
+          className="self-start object-contain"
           src={newProject?.image}
           alt={"Sathish Resume"}
         />
-        <div className="p-4 space-y-3">
-          <p className="text-xl font-bold">{newProject?.name}</p>
-          <p className="text-justify line-clamp-2 text-xs">
-            {newProject?.description}
-          </p>
-          <p className="flex gap-2 flex-wrap">
+        <div className="space-y-3 py-6">
+          <Link
+            className="group flex items-center gap-2 hover:text-emerald-500"
+            target="_blank"
+            href={newProject?.liveUrl}
+          >
+            <h3 className="flex items-center gap-4 text-3xl font-bold">
+              {newProject?.name}{" "}
+            </h3>
+            <ExternalLink
+              className="text-slate-400 group-hover:text-emerald-500 "
+              size={24}
+            />
+          </Link>
+          <p className="flex flex-wrap items-center gap-2">
+            Technologies used:{" "}
             {newProject?.tags.map((tag) => (
-              <span className="text-[10px] font-bold rounded-full px-3 py-[2px] text-slate-900 bg-slate-100">
+              <span className="rounded-full bg-slate-100 px-3 py-[2px] text-[10px] font-bold text-slate-900">
                 {tag}
               </span>
             ))}
           </p>
-          <div className="grid grid-cols-2 gap-2">
-            <Button
-              placeholder={"Visit"}
-              className="w-full"
-              variant="filled"
-              color="teal"
-              onClick={() => {
-                window.open(newProject?.codeUrl, "_blank");
-              }}
-            >
-              Github
-            </Button>
-            <Button
-              placeholder={"Visit"}
-              className="w-full"
-              variant="filled"
-              color="teal"
-              onClick={() => {
-                window.open(newProject?.liveUrl, "_blank");
-              }}
-            >
-              Visit
-            </Button>
+
+          <div className="">
+            <h4 className="text-xl font-semibold">Description</h4>
+            <p className="text-justify font-sans text-sm tracking-wide text-slate-600 first-letter:ml-10 first-letter:text-xl first-line:pl-4 dark:text-slate-300">
+              {newProject?.description}
+            </p>
           </div>
+          <ContentList title={"Achievements"} list={newProject?.achievements} />
+          <ContentList title={"Future Plans"} list={newProject?.futurePlans} />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
 export default ProjectPage;
+
+function ContentList({ list, title }: { list?: string[]; title: string }) {
+  return (
+    <div className="">
+      <h4 className="text-xl font-semibold">{title}</h4>
+      <ul className="space-y-2 text-justify font-sans text-sm tracking-wide text-slate-600 first-letter:text-xl first-line:pl-4 dark:text-slate-300">
+        {list?.map((achievement) => (
+          <li className=" ml-10 list-[circle]">{achievement}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
