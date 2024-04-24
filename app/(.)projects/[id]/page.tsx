@@ -15,7 +15,7 @@ const InterceptedModalRoute = ({
   const router = useRouter();
   return (
     <div
-      className="absolute inset-0 bg-sky-900/20 z-40 flex justify-center items-center backdrop-blur-sm"
+      className="absolute inset-0 z-40 flex items-center justify-center bg-sky-900/20 backdrop-blur-sm"
       onClick={(e) => router.back()}
       onKeyDown={(e) => {
         if (e.key === "Escape") {
@@ -23,7 +23,7 @@ const InterceptedModalRoute = ({
         }
       }}
     >
-      <div className="bg-white dark:bg-slate-950 pb-6 rounded-xl shadow-xl overflow-hidden max-w-[400px]">
+      <div className="max-w-[400px] overflow-hidden rounded-xl bg-white pb-6 shadow-xl dark:bg-slate-950">
         <Image
           width={400}
           height={100}
@@ -31,14 +31,14 @@ const InterceptedModalRoute = ({
           src={newProject?.image}
           alt={"Sathish Resume"}
         />
-        <div className="p-4 space-y-3">
+        <div className="space-y-3 p-4">
           <p className="text-xl font-bold">{newProject?.name}</p>
-          <p className="text-justify line-clamp-2 text-xs">
+          <p className="line-clamp-2 text-justify text-xs">
             {newProject?.description}
           </p>
-          <p className="flex gap-2 flex-wrap">
+          <p className="flex flex-wrap gap-2">
             {newProject?.tags.map((tag) => (
-              <span className="text-[10px] font-bold rounded-full px-3 py-[2px] text-slate-900 bg-slate-100">
+              <span className="rounded-full bg-slate-100 px-3 py-[2px] text-[10px] font-bold text-slate-900">
                 {tag}
               </span>
             ))}

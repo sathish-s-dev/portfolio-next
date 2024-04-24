@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={cn(
           raleway.className,
-          "flex flex-col min-h-screen overflow-x-clip h-full"
+          "flex h-full min-h-screen flex-col overflow-x-clip",
         )}
       >
         <Providers
@@ -65,7 +65,6 @@ export default function RootLayout({
           />
           <SpeedInsights />
           {/* <MouseTrackingBall /> */}
-          
         </Providers>
       </body>
     </html>
