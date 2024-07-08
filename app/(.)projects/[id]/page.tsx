@@ -4,6 +4,9 @@ import React from "react";
 import { projects } from "@/constants";
 import { Button } from "@material-tailwind/react";
 import { useRouter } from "next/navigation";
+import { ContentList } from "@/app/projects/[id]/page";
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
 const InterceptedModalRoute = ({
   params: { id },
@@ -23,52 +26,55 @@ const InterceptedModalRoute = ({
         }
       }}
     >
-      <div className="max-w-[400px] overflow-hidden rounded-xl bg-white pb-6 shadow-xl dark:bg-slate-950">
-        <Image
-          width={400}
-          height={100}
-          className="aspect-square object-cover"
-          src={newProject?.image}
-          alt={"Sathish Resume"}
-        />
-        <div className="space-y-3 p-4">
-          <p className="text-xl font-bold">{newProject?.name}</p>
-          <p className="line-clamp-2 text-justify text-xs">
-            {newProject?.description}
-          </p>
-          <p className="flex flex-wrap gap-2">
-            {newProject?.tags.map((tag) => (
-              <span className="rounded-full bg-slate-100 px-3 py-[2px] text-[10px] font-bold text-slate-900">
-                {tag}
-              </span>
-            ))}
-          </p>
-          <div className="grid grid-cols-2 gap-2">
-            <Button
-              placeholder={"Visit"}
-              className="w-full"
-              variant="filled"
-              color="teal"
-              onClick={() => {
-                window.open(newProject?.codeUrl, "_blank");
-              }}
+      <main className="flex flex-1 items-center justify-center py-24 pt-36">
+        <div className="flex max-w-4xl flex-col justify-start overflow-hidden overflow-y-scroll rounded-xl bg-white p-6 pb-6 shadow-xl dark:bg-slate-950 max-h-[90vh]">
+          <Image
+            width={400}
+            height={100}
+            className="self-start object-contain"
+            src={newProject?.image}
+            alt={"Sathish Resume"}
+          />
+          <div className="space-y-3 py-6">
+            <Link
+              className="group flex items-center gap-2 hover:text-emerald-500"
+              target="_blank"
+              href={newProject?.liveUrl}
             >
-              Github
-            </Button>
-            <Button
-              placeholder={"Visit"}
-              className="w-full"
-              variant="filled"
-              color="teal"
-              onClick={() => {
-                window.open(newProject?.liveUrl, "_blank");
-              }}
-            >
-              Visit
-            </Button>
+              <h3 className="flex items-center gap-4 text-3xl font-bold">
+                {newProject?.name}{" "}
+              </h3>
+              <ExternalLink
+                className="text-slate-400 group-hover:text-emerald-500 "
+                size={24}
+              />
+            </Link>
+            <p className="flex flex-wrap items-center gap-2">
+              Technologies used:{" "}
+              {newProject?.tags.map((tag) => (
+                <span className="rounded-full bg-slate-100 px-3 py-[2px] text-[10px] font-bold text-slate-900">
+                  {tag}
+                </span>
+              ))}
+            </p>
+
+            <div className="">
+              <h4 className="text-xl font-semibold">Description</h4>
+              <p className="text-justify font-sans text-sm tracking-wide text-slate-600 first-letter:ml-10 first-letter:text-xl first-line:pl-4 dark:text-slate-300">
+                {newProject?.description}
+              </p>
+            </div>
+            <ContentList
+              title={"Achievements"}
+              list={newProject?.achievements}
+            />
+            <ContentList
+              title={"Future Plans"}
+              list={newProject?.futurePlans}
+            />
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 };

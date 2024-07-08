@@ -61,13 +61,13 @@ const ProjectPage = ({ params: { id } }: { params: { id: string } }) => {
 
 export default ProjectPage;
 
-function ContentList({ list, title }: { list?: string[]; title: string }) {
+export function ContentList({ list, title }: { list?: string[]; title: string }) {
   return (
     <div className="">
       <h4 className="text-xl font-semibold">{title}</h4>
       <ul className="space-y-2 text-justify font-sans text-sm tracking-wide text-slate-600 first-letter:text-xl first-line:pl-4 dark:text-slate-300">
         {list?.map((achievement) => (
-          <li className=" ml-10 list-[circle]">{achievement}</li>
+          <li className="ml-10 list-[circle] border p-2">{achievement}</li>
         ))}
       </ul>
     </div>

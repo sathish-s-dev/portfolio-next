@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Heading } from "./ui/heading";
 import Image from "next/image";
@@ -5,38 +6,43 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Circles from "./circles";
+// import Typical from "react-typical";
+import { TypingText } from "typing-text-animation";
 
 const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="w-full relative grid-cols-1 items-start grid md:grid-cols-2 gap-16 md:py-12 md:gap-0 place-items-center"
+      className="relative grid w-full grid-cols-1 place-items-center items-start gap-16 md:grid-cols-2 md:gap-0 md:py-12"
     >
-      <div className="grid gap-4 place-items-start place-content-start">
+      <div className="grid place-content-start place-items-start gap-4">
         {/* <Circles className='-left-24' /> */}
-        <Heading className="lg:text-5xl text-4xl block">
+        <Heading className="block text-4xl lg:text-5xl">
           Nice to Meet you!
-          <span className="block pt-2 bg-gradient-to-br text-4xl from-sky-500 via-teal-300 to-sky-900 bg-clip-text text-transparent">
+          <span className="block bg-gradient-to-br from-sky-500 via-teal-300 to-sky-900 bg-clip-text pt-2 text-4xl text-transparent">
             I&apos;m SATHISH
           </span>
-          <span className="block pt-2 bg-gradient-to-b text-xl from-fuchsia-500 to-sky-500 bg-clip-text text-transparent">
-            Front End Developer
+          <span className="block bg-gradient-to-b from-fuchsia-500 to-sky-500 bg-clip-text pt-2 text-xl text-transparent">
+            <TypingText
+              text={["React Developer", "Frontend Developer","React Native Developer"]}
+              // className="text-xs md:text-sm"
+              // speed={100}
+            />
           </span>
         </Heading>
-        <p className="md:text-sm max-w-sm text-xs line-clamp-3">
-          I am a React developer specializing in
-          developing user-centric web applications with seamless integration.
-          Proficient in performance optimization and Agile methodologies, I
-          excel in collaborative environments, adept at translating design
-          mockups into visually appealing and functional interfaces.
-          Additionally, I possess advanced skills in front-end technologies and
-          frameworks, ensuring a well-rounded expertise to deliver high-quality
-          projects.
+        <p className="line-clamp-3 max-w-sm text-xs md:text-sm">
+          I am a React developer specializing in developing user-centric web
+          applications with seamless integration. Proficient in performance
+          optimization and Agile methodologies, I excel in collaborative
+          environments, adept at translating design mockups into visually
+          appealing and functional interfaces. Additionally, I possess advanced
+          skills in front-end technologies and frameworks, ensuring a
+          well-rounded expertise to deliver high-quality projects.
         </p>
         <Button
           placeholder={"hire me"}
           color="teal"
-          className="w-full max-w-[150px] mt-4"
+          className="mt-4 w-full max-w-[150px]"
         >
           <Link href="#contact">Hire me</Link>
         </Button>
@@ -46,7 +52,7 @@ const HeroSection = () => {
         alt="sathish photo"
         width={250}
         height={250}
-        className="w-full max-w-[350px] md:w-auto mx-auto place-self-center"
+        className="mx-auto w-full max-w-[350px] place-self-center md:w-auto"
       />
     </section>
   );

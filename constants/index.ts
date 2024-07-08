@@ -5,6 +5,8 @@ import {
   Activity,
   Phone,
   LucideIcon,
+  UserRoundIcon,
+  BrainCircuit,
 } from "lucide-react";
 
 export const projects: Project[] = [
@@ -273,12 +275,12 @@ export const links: Tlink[] = [
   {
     name: "About",
     href: "#about",
-    Icon: BadgeInfo,
+    Icon: UserRoundIcon,
   },
   {
     name: "skills",
     href: "#skills",
-    Icon: Layers3,
+    Icon: BrainCircuit  ,
   },
   // {
   // 	name: 'Experience',
@@ -288,7 +290,7 @@ export const links: Tlink[] = [
   {
     name: "Projects",
     href: "#projects",
-    Icon: Activity,
+    Icon: Layers3,
   },
   {
     name: "Contact",
